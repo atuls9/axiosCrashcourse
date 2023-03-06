@@ -14,7 +14,7 @@ function getTodos() {
     // .catch((err)=>console.log(err));
 
     axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5', {
-        timeout: 5000
+        // timeout: 5000
     })
         .then((res => showOutput(res)))
         .catch((err) => console.log(err));
